@@ -4,5 +4,5 @@ namespace RESTfullBankAPI.Models;
 
 public class AccountContext(DbContextOptions<AccountContext> options) : DbContext(options)
 {
-    public DbSet<Account> Accounts { get; init; }
+    public DbSet<Account> Accounts { get; set; } = null!;
 }
